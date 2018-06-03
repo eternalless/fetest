@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run unit",
+    "test": "npm run e2e && npm run unit && npm run uitest && npm run service",
     "e2e": "node ./e2e/baidu.js",
     "unit": "karma start",
     "uitest": "backstop test",
