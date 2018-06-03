@@ -1,0 +1,81 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2018-06-03T05:55:31.340Z",
+    "end": "2018-06-03T05:55:31.389Z",
+    "duration": 49,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "3f1e5b94-7ba6-4d1c-b312-ebc2ea790043",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "da7c2484-2c35-41d6-988a-617b80d42d52",
+        "title": "node接口测试",
+        "fullFile": "F:\\baiduyun\\chen-jcyd\\fetest\\service\\router.spec.js",
+        "file": "\\service\\router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "test 接口测试",
+            "fullTitle": "node接口测试 test 接口测试",
+            "timedOut": false,
+            "duration": 38,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "axios.get('http://localhost:3000/test')\n    .then(function (res) {\n    expect(res.status).to.equal(200);\n    console.log(res.data)\n    if(res.data.data == \"Hello World!\"){\n            done();\n    }else{\n            done(new Error('结果不符合预期!!!'));\n    }\n    }).catch(function (error) {\n    done(error);\n});",
+            "err": {
+              "message": "Error: 结果不符合预期!!!",
+              "estack": "Error: 结果不符合预期!!!\n    at F:\\baiduyun\\chen-jcyd\\fetest\\service\\router.spec.js:34:26\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+            },
+            "isRoot": false,
+            "uuid": "3a1d4cf4-c9e0-4e8b-9f8b-b43a89c746a8",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "3a1d4cf4-c9e0-4e8b-9f8b-b43a89c746a8"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 38,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
